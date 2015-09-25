@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Car Afficianado's MPG Analyzer</title>
+	<meta name="description" content="Car Afficianado's MPG Analyzer">
+	<meta name="author" content="Ken Kaufman">
+	<meta name="generator" content="slidify" />
+	
+	<!-- LOAD STYLE SHEETS -->
+	<link rel="stylesheet" href="libraries/frameworks/html5slides/default/styles.css">
+	<link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />  <link rel="stylesheet" href = "assets/css/ribbons.css">
+  
+</head>
+<body style='display: none'>
+	<section class='slides layout-regular template-regular'>
+     <article class="" id="slide-1" style="background:;">
+  <h3>Car Afficianado&#39;s MPG Analyzer</h3>
+  <p>The quest to build the most fuel efficient car</p>
+
+<p>Ken Kaufman
+CEO, Car Afficianado</p>
+
+</article>
+
+<article class="class" id="id" style="background:;">
+  <h3>Executive Summary</h3>
+  <p>With ever increasing fuel efficiency standards, automobile designers are looking for innovative ways to build more fuel efficient cars.</p>
+
+<p>Car Afficanado has developed an application to help the engineers build the most efficient car.  The application will help analyze variables that contribute greatly to fuel efficiency.  In addition, the engineer can input variables and instantly see the predicted MPG.</p>
+
+</article>
+
+<article class="class" id="id" style="background:;">
+  <h3>Automobile Variables</h3>
+  <p>The variables explored in this application include:</p>
+
+<pre><code class="r">data(mtcars)
+names(mtcars)
+</code></pre>
+
+<pre><code>##  [1] &quot;mpg&quot;  &quot;cyl&quot;  &quot;disp&quot; &quot;hp&quot;   &quot;drat&quot; &quot;wt&quot;   &quot;qsec&quot; &quot;vs&quot;   &quot;am&quot;   &quot;gear&quot;
+## [11] &quot;carb&quot;
+</code></pre>
+
+</article>
+
+<article class="class" id="id" style="background:;">
+  <h3>Example Analysis</h3>
+  <pre><code class="r">plot(mtcars$mpg, mtcars$wt, pch = 16, col=&quot;blue&quot;, xlab=&quot;mpg&quot;, ylab=&quot;wt&quot;)
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2"> </p>
+
+</article>
+
+<article class="class" id="id" style="background:;">
+  <h3>Predicting the MPG</h3>
+  <p>A prediction model has been built to deliver 90+% accuracy.  It allows the engineer to alter a variety of highly impactful variables and see the impacts to MPG instantly.</p>
+
+</article>
+
+  </section>
+</body>
+  <!-- LOAD JAVASCRIPTS  -->
+	<script src='libraries/frameworks/html5slides/default/slides.js'></script>
+	<!-- LOAD HIGHLIGHTER JS FILES -->
+	<script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+	 
+	</html>
